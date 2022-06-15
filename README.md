@@ -7,16 +7,16 @@ In this submission, the artifacts of the paper "Adaptive Behavioral Model Learni
 The two subject systems used in the experiments are the Minepump SPL and the BCS SPL. For each of these SPLs, there is a folder of the same name in the **experiments** folder. The contents of these folders are described below:
 
 1. The Minepump SPL:
-The artifacts of the Minepump SPL are available in the **Minepump_SPL** directory. This folder contains a file named **model.xml** which is the feature model [8,11] of this SPL. Feature model files are available in ".xml" format \cite{DBLP:journals/scp/ThumKBMSL14} and are created using the FeatureIDE \cite{DBLP:journals/scp/ThumKBMSL14} library.
-Model learning experiments are performed using finite state machines (FSM) \cite{gill1962introduction}.
+The artifacts of the Minepump SPL are available in the **Minepump_SPL** directory. This folder contains a file named **model.xml** which is the feature model [8,11] of this SPL. Feature model files are available in ".xml" format [12] and are created using the FeatureIDE [12] library.
+Model learning experiments are performed using finite state machines (FSM) [5].
 The FSM files and the configuration files for the products in the sample are in folder **products_3wise**.
-The FSM files are saved in ".dot" format \cite{Gansner00anopen,Ellson01graphviz—} and the configuration files are in ".config" format \cite{DBLP:journals/scp/ThumKBMSL14}.
+The FSM files are saved in ".dot" format [3,4] and the configuration files are in ".config" format [12].
 2. The BCS SPL:
-The artifacts of the BCS SPL are stored in the **BCS_SPL** folder. The **model.xml** file is the feature model of this SPL. The FSM files for the BCS components are available in the **Complete_FSM_files** folder. The component FSMs are created using the I/O transition systems which are available in \cite{lity2013delta}. The FSM of each valid product, can be created by merging the FSMs of its components.
+The artifacts of the BCS SPL are stored in the **BCS_SPL** folder. The **model.xml** file is the feature model of this SPL. The FSM files for the BCS components are available in the **Complete_FSM_files** folder. The component FSMs are created using the I/O transition systems which are available in [9]. The FSM of each valid product, can be created by merging the FSMs of its components.
 
 ## The Source Code Artifacts
 
-In the paper, the model learning experiments are performed using the **ExtensibleLStarMealyBuilder** class of the LearnLib \cite{DBLP:conf/fmics/RaffeltSB05} library version 0.16.0.
+In the paper, the model learning experiments are performed using the **ExtensibleLStarMealyBuilder** class of the LearnLib [10] library version 0.16.0.
 The source code artifacts of this paper are in the **ir.ac.ut.fml** package from the **src** directory. The function of classes in this package is described below:
 
 The **MergeMultipleFSMs** class is used to produce the FSMs of the BCS SPL products. The input parameters of this class are listed below:
@@ -84,9 +84,9 @@ The results of Experiment \ref{experiment_2_2} are available as ".csv" files in 
 ### Statistical Tests
 
 The source codes for performing statistical tests and plotting diagrams are in the **SPL_Learning.ipynb** file (which is located in the **statistical_tests** folder). These codes are written in Python using the Jupyter Notebook.
-To perform statistical tests, the ".csv" files generated in the experiments described in Section \ref{experiments} are first loaded using into DataFrames using the **read_csv** method of the Pandas \cite{mckinney-proc-scipy-2010} library.
-Statistil tests are performed using the Scipy \cite{SciPy} library.
-The Matplotlib \cite{Hunter:2007} library is used to draw the diagrams.
+To perform statistical tests, the ".csv" files generated in the experiments described in Section \ref{experiments} are first loaded using into DataFrames using the **read_csv** method of the Pandas [13] library.
+Statistil tests are performed using the Scipy [7] library.
+The Matplotlib [6] library is used to draw the diagrams.
 
 
 \section{Licensing} 
@@ -94,10 +94,9 @@ The artifacts are all available under GNU Public License 3.0.
 It makes use of the following two repositories, which are also available under the same license and
 are properly attributed in the artifact: 
 
-https://github.com/damascenodiego/DynamicLstarM
-\cite{DBLP:conf/ifm/DamascenoMS19}
+https://github.com/damascenodiego/DynamicLstarM [1]
 
 https://github.com/damascenodiego/learningFFSM
-\cite{DBLP:journals/ese/DamascenoMS21}
+[2]
 
 ### References:

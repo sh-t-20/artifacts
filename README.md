@@ -114,3 +114,13 @@ https://github.com/damascenodiego/learningFFSM [2]
 [7] Eric Jones, Travis Oliphant, Pearu Peterson, et al. 2001-. Scipy: Open source scientific tools for Python. http://www.scipy.org/
 
 [8] Kyo C Kang, Sholom G Cohen, James A Hess, William E Novak, and A Spencer Peterson. 1990. *Featureoriented domain analysis (FODA) feasibility study*. Technical Report. Carnegie-Mellon Univ Pittsburgh Pa Software Engineering Inst.
+
+[9] Sascha Lity, Remo Lachmann, Malte Lochau, and Ina Schaerfer. 2012. *Delta-oriented software product line test models-the body comfort system case study*. Technical Report 2012-07. TU Braunschweig.
+
+[10] Harald Rafflet, Bernhard Steffen, and Therese Berg. 2005. LearnLib: a library for automata learning and experimentation. In *Preceedings of th 10th international workshop on Formal methods for industrial critical systems, FMICS '05, Lisbon, Portugal, September 5-6, 2005*, Tiziana Margaria and Mieke Massink (Eds.). ACM, 62-71.
+
+[11] Pierre-Yves Schobbens, Patrick Heymans, and Jean-Christophe Trigaux. 2006. Feature Diagrams: A Survey and a Formal Semantics. In *14th IEEE international Conference on Requirements Engineering (RE 2006), 11-15 September 2006, Minneapolis/St.Paul, Minnesota, USA*. IEEE Computer Society, 136-145.
+
+[12] Thomas Thum, Christian Kastner, Fabian Benduhn, Jens Meinicke, Gunter Saake, and Thomas Leich. 2014. FeatureIDE: An extensible framework for feature-oriented software development. *Sci. Comput. Program. 79* (2014), 70-85.
+
+[13] Wes McKinney. 2010. Data Structures for Statistical Computing in Python. In *Proceedings of the 9th Python in Science Conference*, Stefan van der Walt and Jarrod Millman (Eds.). 56-61.

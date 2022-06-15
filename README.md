@@ -26,11 +26,11 @@ The **MergeMultipleFSMs** class is used to produce the FSMs of the BCS SPL produ
 * -out: Output directory for storing FSMs of SPL products.
 * -fm: Feature model
 
-Using the \texttt{MergeMultipleFSMs} class, for each of the product configuration files, the FSM files of its features are merged and the FSM of that product is constructed.
-The configuration files of the BCS SPL are available in the \texttt{products\_3wise} folder of the \texttt{BCS\_SPL} directory.
-The FSM files for the components of the BCS SPL are available in the \texttt{Complete\_FSM\_files}..
+Using the **MergeMultipleFSMs** class, for each of the product configuration files, the FSM files of its features are merged and the FSM of that product is constructed.
+The configuration files of the BCS SPL are available in the **products_3wise** folder of the **BCS_SPL** directory.
+The FSM files for the components of the BCS SPL are available in the **Complete_FSM_files**.
 
-The \texttt{LearningOrderSampling} class, as input, takes a folder containing the products sampled from an SPL (i.e., the subject system SPLs). The products in this sample are learned based on different random orders using the $\text{PL}^*$ method and the non-adaptive method. For each learning order, the values of the learning cost metrics for each learning method are measured and stored in a log file.
+The **LearningOrderSampling** class, as input, takes a folder containing the products sampled from an SPL (i.e., the subject system SPLs). The products in this sample are learned based on different random orders using the PL* method and the non-adaptive method. For each learning order, the values of the learning cost metrics for each learning method are measured and stored in a log file.
 By running the \texttt{FixedLearningOrder} class, the products in a sample are learned based on a fixed learning order using the $\text{PL}^*$ method. This process is repeated several times and the values of the learning cost metrics are stored in a log file.
 The \texttt{Calculate order metric} class is used to calculate the values of parameter $D$ for a number of random learning orders. After running this class, the calculated values of parameter $D$ are stored in a log file.
 

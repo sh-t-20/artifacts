@@ -12,7 +12,7 @@ Model learning experiments are performed using finite state machines (FSM) [5].
 The FSM files and the configuration files for the products in the sample are in folder [``products_3wise``](https://github.com/sh-t-20/artifacts/tree/main/SPL_Learning/experiments/Minepump_SPL/products_3wise).
 The FSM files are saved in ".dot" format [3,4] and the configuration files are in ".config" format [12].
 2. The BCS SPL:
-The artifacts of the BCS SPL are stored in the ``BCS_SPL`` folder. The ``model.xml`` file is the feature model of this SPL. The FSM files for the BCS components are available in the ``Complete_FSM_files`` folder. The component FSMs are created using the I/O transition systems which are available in [9]. The FSM of each valid product, can be created by merging the FSMs of its components.
+The artifacts of the BCS SPL are stored in the [``BCS_SPL``](https://github.com/sh-t-20/artifacts/tree/main/SPL_Learning/experiments/BCS_SPL) folder. The ``model.xml`` file is the feature model of this SPL. The FSM files for the BCS components are available in the [``Complete_FSM_files``](https://github.com/sh-t-20/artifacts/tree/main/SPL_Learning/experiments/BCS_SPL/Complete_FSM_files) folder. The component FSMs are created using the I/O transition systems which are available in [9]. The FSM of each valid product, can be created by merging the FSMs of its components.
 
 ## The Source Code Artifacts
 

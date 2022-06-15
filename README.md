@@ -58,7 +58,7 @@ To do this, the ``ConvertToExcelFile`` class must be run with the following para
 * -file: The input log file
 * -out: The output directory (the ".csv" file will be saved in this directory)
 
-The ".csv" files of this experiment are in the ``results_1`` folder.
+The ".csv" files of this experiment are in the [``results_1``](https://github.com/sh-t-20/artifacts/tree/main/SPL_Learning/results/results_1) folder.
 
 ### Experiment 2: The effect of learning order (RQ4)
 
@@ -67,8 +67,8 @@ Experiment 2_1 shows that the order of learning products can affect the total co
 
 #### Experiment 2_1: The effect of learning order on the efficiency of the PL* method
 To replicate this experiment, a fixed learning order must first be considered. This learning order is stored in a variable of type int array (called ``learning_order_array``) in the ``FixedLearningOrder`` class. The parameters required to run this class are similar to the parameters described for the ``LearningOrderSampling`` class. After running the ``FixedLearningOrder`` class, the measured values for the learning cost metrics are stored in a log file. Using the ``ConverToExcelFile2`` class, these values can be stored as a ".csv" file.
-The above steps must be performed for two learning orders: an order with a high learning efficiency (order 1) and an order with a relatively low learning efficiency (order 2). To determine these two learning orders, the results of Experiment 1, which are sorted by efficiency, can be used. The sorted "csv" files of Experiment 1 are in the ``results_1`` directory.
-The results of Experiment 2_1 for both subject SPLs are available in the ``results_2_1`` directory.
+The above steps must be performed for two learning orders: an order with a high learning efficiency (order 1) and an order with a relatively low learning efficiency (order 2). To determine these two learning orders, the results of Experiment 1, which are sorted by efficiency, can be used. The sorted "csv" files of Experiment 1 are in the [``results_1``](https://github.com/sh-t-20/artifacts/tree/main/SPL_Learning/results/results_1) directory.
+The results of Experiment 2_1 for both subject SPLs are available in the [``results_2_1``](https://github.com/sh-t-20/artifacts/tree/main/SPL_Learning/results/results_2_1) directory.
 
 #### Experiment 2_2: Calculating the parameter *D*
 In this experiment, using the ``CalculateOrderMetric`` class, the values of parameter *D* is calculated for the 200 learning orders used in Experiment 1.
@@ -79,11 +79,11 @@ In order for random learning orders produced in this experiment and Experiment 1
 * item The number of random learning orders generated in both classes must be the same. The number of product learning orders is stored in a variable called ``samples_count``.
 
 After running the ``CalculateOrderMetric`` class, the values calculated for parameter *D* are stored in a log file. Then, using the ``ConvertToExcelFile3`` class, theses values can be saved as a ".csv" file.
-The results of Experiment 2_2 are available as ".csv" files in the ``results_2_2`` folder.
+The results of Experiment 2_2 are available as ".csv" files in the [``results_2_2``](https://github.com/sh-t-20/artifacts/tree/main/SPL_Learning/results/results_2_2) folder.
 
 ### Statistical Tests
 
-The source codes for performing statistical tests and plotting diagrams are in the ``SPL_Learning.ipynb`` file (which is located in the ``statistical_tests`` folder). These codes are written in Python using the Jupyter Notebook.
+The source codes for performing statistical tests and plotting diagrams are in the ``SPL_Learning.ipynb`` file (which is located in the [``statistical_tests``](https://github.com/sh-t-20/artifacts/tree/main/SPL_Learning/statistical_tests) folder). These codes are written in Python using the Jupyter Notebook.
 To perform statistical tests, the ".csv" files generated in the experiments described in the "Replicating the Experiments" Section are first loaded using into DataFrames using the ``read_csv`` method of the Pandas [13] library.
 Statistil tests are performed using the Scipy [7] library.
 The Matplotlib [6] library is used to draw the diagrams.

@@ -99,3 +99,5 @@ https://github.com/damascenodiego/DynamicLstarM [1]
 https://github.com/damascenodiego/learningFFSM [2]
 
 ### References:
+ [1] Carlos Diego Nascimento damasceno, Mohammad Reza Mousavi, and Adenilso da Silva Simao. 2019. Learning to Reuse: Adaptive Model Learning for Evolving Systems. In *Integrated Formal Methods - 15th International Conference, IFM2019, Bergen, Norway December 2-6, 2019, pProceedings (Lecture Notes in Computer Science, Vol. 11918)*, Wolfgang Ahrendt and Silvia Lizeth Tapia Tarifa (Eds.). Springer, 138-156.
+ [2] Carlos

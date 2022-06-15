@@ -7,9 +7,9 @@ In this submission, the artifacts of the paper "Adaptive Behavioral Model Learni
 The two subject systems used in the experiments are the Minepump SPL and the BCS SPL. For each of these SPLs, there is a folder of the same name in the [``experiments``](https://github.com/sh-t-20/artifacts/tree/main/SPL_Learning/experiments) folder. The contents of these folders are described below:
 
 1. The Minepump SPL:
-The artifacts of the Minepump SPL are available in the ``Minepump_SPL`` directory. This folder contains a file named ``model.xml`` which is the feature model [8,11] of this SPL. Feature model files are available in ".xml" format [12] and are created using the FeatureIDE [12] library.
+The artifacts of the Minepump SPL are available in the [``Minepump_SPL``](https://github.com/sh-t-20/artifacts/tree/main/SPL_Learning/experiments/Minepump_SPL) directory. This folder contains a file named ``model.xml`` which is the feature model [8,11] of this SPL. Feature model files are available in ".xml" format [12] and are created using the FeatureIDE [12] library.
 Model learning experiments are performed using finite state machines (FSM) [5].
-The FSM files and the configuration files for the products in the sample are in folder ``products_3wise``.
+The FSM files and the configuration files for the products in the sample are in folder [``products_3wise``](https://github.com/sh-t-20/artifacts/tree/main/SPL_Learning/experiments/Minepump_SPL/products_3wise).
 The FSM files are saved in ".dot" format [3,4] and the configuration files are in ".config" format [12].
 2. The BCS SPL:
 The artifacts of the BCS SPL are stored in the ``BCS_SPL`` folder. The ``model.xml`` file is the feature model of this SPL. The FSM files for the BCS components are available in the ``Complete_FSM_files`` folder. The component FSMs are created using the I/O transition systems which are available in [9]. The FSM of each valid product, can be created by merging the FSMs of its components.

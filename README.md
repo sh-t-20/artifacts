@@ -93,9 +93,7 @@ The Matplotlib [6] library is used to draw the diagrams.
 The artifacts are all available under GNU Public License 3.0. 
 It makes use of the following two repositories, which are also available under the same license and
 are properly attributed in the artifact: 
-
 https://github.com/damascenodiego/DynamicLstarM [1]
-
 https://github.com/damascenodiego/learningFFSM [2]
 
 ### References:

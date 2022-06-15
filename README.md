@@ -89,7 +89,7 @@ Statistil tests are performed using the Scipy [7] library.
 The Matplotlib [6] library is used to draw the diagrams.
 
 
-\section{Licensing} 
+## Licensing
 The artifacts are all available under GNU Public License 3.0. 
 It makes use of the following two repositories, which are also available under the same license and
 are properly attributed in the artifact: 

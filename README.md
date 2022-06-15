@@ -96,7 +96,6 @@ are properly attributed in the artifact:
 
 https://github.com/damascenodiego/DynamicLstarM [1]
 
-https://github.com/damascenodiego/learningFFSM
-[2]
+https://github.com/damascenodiego/learningFFSM [2]
 
 ### References:

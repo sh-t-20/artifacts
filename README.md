@@ -20,12 +20,12 @@ In the paper, the model learning experiments are performed using the **Extensibl
 The source code artifacts of this paper are in the **ir.ac.ut.fml** package from the **src** directory. The function of classes in this package is described below:
 
 The **MergeMultipleFSMs** class is used to produce the FSMs of the BCS SPL products. The input parameters of this class are listed below:
-\begin{itemize}
-    \item -dir: Directory of the configuration files
-    \item -dir2: Folder containing FSMs of SPL components
-    \item -out: Output directory for storing FSMs of SPL products.
-    \item -fm: Feature model
-\end{itemize}
+
+* -dir: Directory of the configuration files
+* -dir2: Folder containing FSMs of SPL components
+* -out: Output directory for storing FSMs of SPL products.
+* -fm: Feature model
+
 Using the \texttt{MergeMultipleFSMs} class, for each of the product configuration files, the FSM files of its features are merged and the FSM of that product is constructed.
 The configuration files of the BCS SPL are available in the \texttt{products\_3wise} folder of the \texttt{BCS\_SPL} directory.
 The FSM files for the components of the BCS SPL are available in the \texttt{Complete\_FSM\_files}..

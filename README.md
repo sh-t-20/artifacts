@@ -17,7 +17,7 @@ The artifacts of the BCS SPL are stored in the [``BCS_SPL``](https://github.com/
 ## The Source Code Artifacts
 
 In the paper, the model learning experiments are performed using the ``ExtensibleLStarMealyBuilder`` class of the LearnLib [10] library version 0.16.0.
-The source code artifacts of this paper are in the ``ir.ac.ut.fml`` package from the ``src`` directory. The function of classes in this package is described below:
+The source code artifacts of this paper are in the [``ir.ac.ut.fml``](https://github.com/sh-t-20/artifacts/tree/main/SPL_Learning/src/main/java/ir/ac/ut/fml) package from the [``src``](https://github.com/sh-t-20/artifacts/tree/main/SPL_Learning/src/main/java) directory. The function of classes in this package is described below:
 
 The ``MergeMultipleFSMs`` class is used to produce the FSMs of the BCS SPL products. The input parameters of this class are listed below:
 

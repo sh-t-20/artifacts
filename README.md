@@ -31,65 +31,60 @@ The configuration files of the BCS SPL are available in the **products_3wise** f
 The FSM files for the components of the BCS SPL are available in the **Complete_FSM_files**.
 
 The **LearningOrderSampling** class, as input, takes a folder containing the products sampled from an SPL (i.e., the subject system SPLs). The products in this sample are learned based on different random orders using the PL* method and the non-adaptive method. For each learning order, the values of the learning cost metrics for each learning method are measured and stored in a log file.
-By running the \texttt{FixedLearningOrder} class, the products in a sample are learned based on a fixed learning order using the $\text{PL}^*$ method. This process is repeated several times and the values of the learning cost metrics are stored in a log file.
-The \texttt{Calculate order metric} class is used to calculate the values of parameter $D$ for a number of random learning orders. After running this class, the calculated values of parameter $D$ are stored in a log file.
+By running the **FixedLearningOrder** class, the products in a sample are learned based on a fixed learning order using the PL* method. This process is repeated several times and the values of the learning cost metrics are stored in a log file.
+The **Calculate order metric** class is used to calculate the values of parameter ***D*** for a number of random learning orders. After running this class, the calculated values of parameter ***D*** are stored in a log file.
 
-The three classes \texttt{ConvertToExcelFile}, \texttt{ConvertToExcelFile2} and \texttt{ConvertToExcelFile3} are used in Experiments \ref{experiment_1}, \ref{experiment_2_1} and \ref{experiment_2_2}, respectively, to convert the created log file to a ``.csv'' file.
+The three classes **ConvertToExcelFile**, **ConvertToExcelFile2** and **ConvertToExcelFile3** are used in Experiments \ref{experiment_1}, \ref{experiment_2_1} and \ref{experiment_2_2}, respectively, to convert the created log file to a ``.csv'' file.
 
 
-\section{Replicating the Experiments}\label{experiments}
-To replicate the experiments, the repository must be downloaded. All the files needed for these experiments are in the \texttt{experiments} folder. The steps of replicating the experiments is described below:
+## Replicating the Experiments
+To replicate the experiments, the repository must be downloaded. All the files needed for these experiments are in the **experiments** folder. The steps of replicating the experiments is described below:
 
-\subsection{Comparing the learning methods (RQ1-RQ3)}\label{experiment_1}
-To replicate this experiment, the \texttt{LearningOrderSampling} class must be run using the following parameters:
+### Comparing the learning methods (RQ1-RQ3)
+To replicate this experiment, the **LearningOrderSampling** class must be run using the following parameters:
 
-\begin{itemize}
-    \item -dir: Directory of the SPL products (sampled products)
-    \item -out: The output directory (the log file will be saved in this directory)
-    \item -sot2: A folder for storing observation tables and learned FSM files
-\end{itemize}
+* -dir: Directory of the SPL products (sampled products)
+* -out: The output directory (the log file will be saved in this directory)
+* -sot2: A folder for storing observation tables and learned FSM files
+
 It is not necessary to specify the values of other arguments because they have default values.
-If the ``-help'' argument is used, the help menu is displayed.
-The number of learning orders tested is determined using the \texttt{samples\_count} variable, which in this experiment is set to 200. 
+If the "-help" argument is used, the help menu is displayed.
+The number of learning orders tested is determined using the **samples_count** variable, which in this experiment is set to 200. 
 
-The learning orders used and their corresponding metric values, which are stored in the log file, must be saved as a ``.csv'' file.
-Each row of this ``.csv'' file contains a learning order and the corresponding learning cost metric values (for the $\text{PL}^*$ method and the non-adaptive method)
+The learning orders used and their corresponding metric values, which are stored in the log file, must be saved as a ".csv" file.
+Each row of this ".csv" file contains a learning order and the corresponding learning cost metric values (for the PL* method and the non-adaptive method)
 To do this, the \texttt{ConvertToExcelFile} class must be run with the following parameters:
 
-\begin{itemize}
-    \item -file: The input log file
-    \item -out: The output directory (the ``.csv'' file will be saved in this directory)
-\end{itemize}
+* -file: The input log file
+* -out: The output directory (the ".csv" file will be saved in this directory)
 
-The ``.csv'' files of this experiment are in the \texttt{results\_1} folder.
+The ".csv" files of this experiment are in the **results_1** folder.
 
-\subsection{The effect of learning order (RQ4)}
+### The effect of learning order (RQ4)
 
-To evaluate the effect of product learning order on the efficiency of the $\text{PL}^*$ method, two experiments are performed.
-Experiment \ref{experiment_2_1} shows that the order of learning products can affect the total cost of learning in the $\text{PL}^*$ method. In Experiment \ref{experiment_2_2}, the value of parameter $D$ is calculated for the 200 learning orders used in Experiment \ref{experiment_1}. At the end of this experiment, the Pearson correlation coefficient between $D$ and the learning cost metrics can be calculated (using the Python codes explained in \ref{section:statistical_tests}).
+To evaluate the effect of product learning order on the efficiency of the PL* method, two experiments are performed.
+Experiment \ref{experiment_2_1} shows that the order of learning products can affect the total cost of learning in the PL* method. In Experiment \ref{experiment_2_2}, the value of parameter $D$ is calculated for the 200 learning orders used in Experiment \ref{experiment_1}. At the end of this experiment, the Pearson correlation coefficient between $D$ and the learning cost metrics can be calculated (using the Python codes explained in \ref{section:statistical_tests}).
 
-\subsubsection{The effect of learning order on the efficiency of the $\text{PL}^*$ method}\label{experiment_2_1}
-To replicate this experiment, a fixed learning order must first be considered. This learning order is stored in a variable of type int array (called \texttt{learning\_order\_array}) in the \texttt{FixedLearningOrder} class. The parameters required to run this class are similar to the parameters described for the \texttt{LearningOrderSampling} class. After running the \texttt{FixedLearningOrder} class, the measured values for the learning cost metrics are stored in a log file. Using the \texttt{ConverToExcelFile2} class, these values can be stored as a ``.csv'' file.
-The above steps must be performed for two learning orders: an order with a high learning efficiency (order 1) and an order with a relatively low learning efficiency (order 2). To determine these two learning orders, the results of Experiment \ref{experiment_1}, which are sorted by efficiency, can be used. The sorted ``csv'' files of Experiment \ref{experiment_1} are in the \texttt{results\_1} directory.
-The results of Experiment \ref{experiment_2_1} for both subject SPLs are available in the \texttt{results\_2\_1} directory.
+#### The effect of learning order on the efficiency of the PL* method
+To replicate this experiment, a fixed learning order must first be considered. This learning order is stored in a variable of type int array (called **learning_order_array**) in the **FixedLearningOrder** class. The parameters required to run this class are similar to the parameters described for the **LearningOrderSampling** class. After running the **FixedLearningOrder** class, the measured values for the learning cost metrics are stored in a log file. Using the **ConverToExcelFile2** class, these values can be stored as a ".csv" file.
+The above steps must be performed for two learning orders: an order with a high learning efficiency (order 1) and an order with a relatively low learning efficiency (order 2). To determine these two learning orders, the results of Experiment \ref{experiment_1}, which are sorted by efficiency, can be used. The sorted "csv" files of Experiment \ref{experiment_1} are in the **results_1** directory.
+The results of Experiment \ref{experiment_2_1} for both subject SPLs are available in the **results_2_1** directory.
 
-\subsubsection{Calculating the parameter D}\label{experiment_2_2}
-In this experiment, using the \texttt{CalculateOrderMetric} class, the values of parameter $D$ is calculated for the 200 learning orders used in Experiment \ref{experiment_1}.
-The parameters required to run the \texttt{CalculateOrderMetric} class are similar to the parameters explained for the \texttt{LearningOrderSampling} class.
-In order for random learning orders produced in this experiment and Experiment \ref{experiment_1} to be the same, the following conditions must be considered for the \texttt{CalculateOrderMetric} and \texttt{LearningOrderSampling} classes:
+#### Calculating the parameter ***D***
+In this experiment, using the **CalculateOrderMetric** class, the values of parameter ***D*** is calculated for the 200 learning orders used in Experiment \ref{experiment_1}.
+The parameters required to run the **CalculateOrderMetric** class are similar to the parameters explained for the **LearningOrderSampling** class.
+In order for random learning orders produced in this experiment and Experiment \ref{experiment_1} to be the same, the following conditions must be considered for the **CalculateOrderMetric** and **LearningOrderSampling** classes:
 
-\begin{itemize}
-    \item  The initial value of the seed must be the same in both classes. The seed value is stored in a \texttt{long} variable of the same name.
-    \item The number of random learning orders generated in both classes must be the same. The number of product learning orders is stored in a variable called \texttt{samples\_count}.
-\end{itemize}
+* The initial value of the seed must be the same in both classes. The seed value is stored in a **long** variable of the same name.
+* item The number of random learning orders generated in both classes must be the same. The number of product learning orders is stored in a variable called **samples_count**.
 
-After running the \texttt{CalculateOrderMetric} class, the values calculated for parameter $D$ are stored in a log file. Then, using the \texttt{ConvertToExcelFile3} class, theses values can be saved as a ``.csv'' file.
-The results of Experiment \ref{experiment_2_2} are available as ``.csv'' files in the \texttt{results\_2\_2} folder.
+After running the **CalculateOrderMetric** class, the values calculated for parameter ***D*** are stored in a log file. Then, using the **ConvertToExcelFile3** class, theses values can be saved as a ".csv" file.
+The results of Experiment \ref{experiment_2_2} are available as ".csv" files in the **results_2_2** folder.
 
-\section{Statistical Tests}\label{section:statistical_tests}
+### Statistical Tests
 
-The source codes for performing statistical tests and plotting diagrams are in the \texttt{SPL\_Learning.ipynb} file (which is located in the \texttt{statistical\_tests} folder). These codes are written in Python using the Jupyter Notebook.
-To perform statistical tests, the ``.csv'' files generated in the experiments described in Section \ref{experiments} are first loaded using into DataFrames using the \texttt{read\_csv} method of the Pandas \cite{mckinney-proc-scipy-2010} library.
+The source codes for performing statistical tests and plotting diagrams are in the **SPL_Learning.ipynb** file (which is located in the **statistical_tests** folder). These codes are written in Python using the Jupyter Notebook.
+To perform statistical tests, the ".csv" files generated in the experiments described in Section \ref{experiments} are first loaded using into DataFrames using the **read_csv** method of the Pandas \cite{mckinney-proc-scipy-2010} library.
 Statistil tests are performed using the Scipy \cite{SciPy} library.
 The Matplotlib \cite{Hunter:2007} library is used to draw the diagrams.
 

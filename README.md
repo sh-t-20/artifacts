@@ -6,18 +6,15 @@ In this submission, the artifacts of the paper ``Adaptive Behavioral Model Learn
 ## Subject Systems
 The two subject systems used in the experiments are the Minepump SPL and the BCS SPL. For each of these SPLs, there is a folder of the same name in the **experiments** folder. The contents of these folders are described below:
 
-\begin{itemize}
-    \item \textbf{The Minepump SPL:}
-    The artifacts of the Minepump SPL are available in the \texttt{Minepump\_SPL} directory. This folder contains a file named \texttt{model.xml} which is the feature model \cite{kang1990feature,DBLP:conf/re/SchobbensHT06} of this SPL. Feature model files are available in ``.xml'' format \cite{DBLP:journals/scp/ThumKBMSL14} and are created using the FeatureIDE \cite{DBLP:journals/scp/ThumKBMSL14} library. %TODO what's the format of the feature model?
-    Model learning experiments are performed using finite state machines (FSM) \cite{gill1962introduction}.
-    The FSM files and the configuration files for the products in the sample are in folder \texttt{products\_3wise}.
-    The FSM files are saved in ``.dot'' format \cite{Gansner00anopen,Ellson01graphviz—} and the configuration files are in ``.config'' format \cite{DBLP:journals/scp/ThumKBMSL14}. %TODO provide references that explain the file formats
-    \item \textbf{The BCS SPL}
-    The artifacts of the BCS SPL are stored in the \texttt{BCS\_SPL} folder. The \texttt{model.xml} file is the feature model of this SPL. The FSM files for the BCS components are available in the \texttt{Complete\_FSM\_files} folder. The component FSMs are created using the I/O transition systems which are available in \cite{lity2013delta}. The FSM of each valid product, can be created by merging the FSMs of its components.
-\end{itemize}
+### 1) The Minepump SPL:
+The artifacts of the Minepump SPL are available in the **Minepump_SPL** directory. This folder contains a file named **model.xml** which is the feature model \cite{kang1990feature,DBLP:conf/re/SchobbensHT06} of this SPL. Feature model files are available in ``.xml'' format \cite{DBLP:journals/scp/ThumKBMSL14} and are created using the FeatureIDE \cite{DBLP:journals/scp/ThumKBMSL14} library.
+Model learning experiments are performed using finite state machines (FSM) \cite{gill1962introduction}.
+The FSM files and the configuration files for the products in the sample are in folder \texttt{products\_3wise}.
+The FSM files are saved in ``.dot'' format \cite{Gansner00anopen,Ellson01graphviz—} and the configuration files are in ``.config'' format \cite{DBLP:journals/scp/ThumKBMSL14}.
+### 2) The BCS SPL:
+The artifacts of the BCS SPL are stored in the * *BCS_SPL* * folder. The **model.xml** file is the feature model of this SPL. The FSM files for the BCS components are available in the \texttt{Complete\_FSM\_files} folder. The component FSMs are created using the I/O transition systems which are available in \cite{lity2013delta}. The FSM of each valid product, can be created by merging the FSMs of its components.
 
-
-\section{The Source Code Artifacts}\label{section:source_code}
+## The Source Code Artifacts
 
 In the paper, the model learning experiments are performed using the \texttt{ExtensibleLStarMealyBuilder} class of the LearnLib \cite{DBLP:conf/fmics/RaffeltSB05} library version 0.16.0.
 The source code artifacts of this paper are in the \texttt{ir.ac.ut.fml} package from the \texttt{src} directory. The function of classes in this package is described below:

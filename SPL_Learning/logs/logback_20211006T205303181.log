@@ -1,0 +1,17 @@
+2021-10-06 20:53:03 INFO Infer_LearnLib |SUL name: 00001_text.txt
+2021-10-06 20:53:03 INFO Infer_LearnLib |SUL dir: E:\programming\Benchmarks\minepump_2_Copy\products_2wise\00001_text.txt
+2021-10-06 20:53:03 INFO Infer_LearnLib |Output dir: E:\programming\Benchmarks\minepump_2_Copy\output_dir
+2021-10-06 20:53:03 INFO Infer_LearnLib |Cache: N
+2021-10-06 20:53:03 INFO Infer_LearnLib |ClosingStrategy: CloseFirst
+2021-10-06 20:53:03 INFO Infer_LearnLib |ObservationTableCEXHandler: null
+2021-10-06 20:53:03 INFO Infer_LearnLib |EquivalenceOracle: WpMethodEQOracle(2)
+2021-10-06 20:53:03 INFO Infer_LearnLib |Method: L*M
+2021-10-06 20:53:03 INFO Experiment |Starting round 1
+2021-10-06 20:53:03 INFO Experiment |Learning
+2021-10-06 20:53:03 INFO Experiment |net.automatalib.automata.transducers.impl.compact.CompactMealy@5ddeb7cb
+2021-10-06 20:53:03 INFO Experiment |Searching for counterexample
+2021-10-06 20:53:03 INFO Experiment |receiveMsg levelMsg lowLevel isNotRunning end
+2021-10-06 20:53:03 INFO Experiment |Starting round 2
+2021-10-06 20:53:03 INFO Experiment |Learning
+2021-10-06 20:53:03 INFO Experiment |net.automatalib.automata.transducers.impl.compact.CompactMealy@5ddeb7cb
+2021-10-06 20:53:03 INFO Experiment |Searching for counterexample

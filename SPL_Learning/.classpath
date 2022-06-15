@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/de.ovgu.featureide.lib.fm-v3.4.2.jar"/>
+	<classpathentry kind="lib" path="lib/org.sat4j.core.jar"/>
+	<classpathentry kind="lib" path="lib/sat4j-sat.jar"/>
+	<classpathentry kind="lib" path="lib/commons-cli-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/antlr4-runtime-4.7.2.jar"/>
+	<classpathentry kind="lib" path="lib/jbool_expressions-1.23.jar"/>
+	<classpathentry kind="lib" path="lib/vibes-core-2.0.5.jar"/>
+	<classpathentry kind="lib" path="lib/vibes-fexpression-2.0.5.jar"/>
+	<classpathentry kind="lib" path="lib/annotations.jar"/>
+	<classpathentry kind="lib" path="lib/antlr-3.4.jar"/>
+	<classpathentry kind="lib" path="lib/de.ovgu.featureide.lib.fm.attributes-v3.5.3.jar"/>
+	<classpathentry kind="lib" path="lib/de.ovgu.featureide.lib.fm-v3.5.3.jar"/>
+	<classpathentry kind="lib" path="lib/guava-r09.jar"/>
+	<classpathentry kind="lib" path="lib/guidsl.jar"/>
+	<classpathentry kind="lib" path="lib/jakarta.jar"/>
+	<classpathentry kind="lib" path="lib/org.sat4j.pb.jar"/>
+	<classpathentry kind="lib" path="mylearn.jar"/>
+	<classpathentry kind="lib" path="learnFFSM.jar"/>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

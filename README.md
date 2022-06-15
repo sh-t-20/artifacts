@@ -7,7 +7,7 @@ In this submission, the artifacts of the paper "Adaptive Behavioral Model Learni
 The two subject systems used in the experiments are the Minepump SPL and the BCS SPL. For each of these SPLs, there is a folder of the same name in the **experiments** folder. The contents of these folders are described below:
 
 1. The Minepump SPL:
-The artifacts of the Minepump SPL are available in the **Minepump_SPL** directory. This folder contains a file named **model.xml** which is the feature model \cite{kang1990feature,DBLP:conf/re/SchobbensHT06} of this SPL. Feature model files are available in ".xml" format \cite{DBLP:journals/scp/ThumKBMSL14} and are created using the FeatureIDE \cite{DBLP:journals/scp/ThumKBMSL14} library.
+The artifacts of the Minepump SPL are available in the **Minepump_SPL** directory. This folder contains a file named **model.xml** which is the feature model [8,11] of this SPL. Feature model files are available in ".xml" format \cite{DBLP:journals/scp/ThumKBMSL14} and are created using the FeatureIDE \cite{DBLP:journals/scp/ThumKBMSL14} library.
 Model learning experiments are performed using finite state machines (FSM) \cite{gill1962introduction}.
 The FSM files and the configuration files for the products in the sample are in folder **products_3wise**.
 The FSM files are saved in ".dot" format \cite{Gansner00anopen,Ellson01graphviz—} and the configuration files are in ".config" format \cite{DBLP:journals/scp/ThumKBMSL14}.
@@ -99,3 +99,5 @@ https://github.com/damascenodiego/DynamicLstarM
 
 https://github.com/damascenodiego/learningFFSM
 \cite{DBLP:journals/ese/DamascenoMS21}
+
+### References:

@@ -12,7 +12,7 @@ Model learning experiments are performed using finite state machines (FSM) \cite
 The FSM files and the configuration files for the products in the sample are in folder \texttt{products\_3wise}.
 The FSM files are saved in ``.dot'' format \cite{Gansner00anopen,Ellson01graphviz—} and the configuration files are in ``.config'' format \cite{DBLP:journals/scp/ThumKBMSL14}.
 ### 2) The BCS SPL:
-The artifacts of the BCS SPL are stored in the * *BCS_SPL* * folder. The **model.xml** file is the feature model of this SPL. The FSM files for the BCS components are available in the \texttt{Complete\_FSM\_files} folder. The component FSMs are created using the I/O transition systems which are available in \cite{lity2013delta}. The FSM of each valid product, can be created by merging the FSMs of its components.
+The artifacts of the BCS SPL are stored in the *BCS_SPL* folder. The **model.xml** file is the feature model of this SPL. The FSM files for the BCS components are available in the \texttt{Complete\_FSM\_files} folder. The component FSMs are created using the I/O transition systems which are available in \cite{lity2013delta}. The FSM of each valid product, can be created by merging the FSMs of its components.
 
 ## The Source Code Artifacts
 

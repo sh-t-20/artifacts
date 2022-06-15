@@ -1,25 +1,25 @@
 # Adaptive Behavioral Model Learning for Software Product Lines (Artifact Submission)
 
 ## Introduction
-In this submission, the artifacts of the paper ``Adaptive Behavioral Model Learning for Software Product Lines'' (Submission number 16) are described. The artifacts include models of the subject systems, source code of the experiments, and statistical tests used. In this paper, the structure of the benchmarks is described; the functionality of the different parts of the source code is explained; and the steps of the performed experiments are elaborated. We also specify how the statistical tests are performed.
+In this submission, the artifacts of the paper "Adaptive Behavioral Model Learning for Software Product Lines" (Submission number 16) are described. The artifacts include models of the subject systems, source code of the experiments, and statistical tests used. In this paper, the structure of the benchmarks is described; the functionality of the different parts of the source code is explained; and the steps of the performed experiments are elaborated. We also specify how the statistical tests are performed.
 
 ## Subject Systems
 The two subject systems used in the experiments are the Minepump SPL and the BCS SPL. For each of these SPLs, there is a folder of the same name in the **experiments** folder. The contents of these folders are described below:
 
-### 1) The Minepump SPL:
-The artifacts of the Minepump SPL are available in the **Minepump_SPL** directory. This folder contains a file named **model.xml** which is the feature model \cite{kang1990feature,DBLP:conf/re/SchobbensHT06} of this SPL. Feature model files are available in ``.xml'' format \cite{DBLP:journals/scp/ThumKBMSL14} and are created using the FeatureIDE \cite{DBLP:journals/scp/ThumKBMSL14} library.
+1. The Minepump SPL:
+The artifacts of the Minepump SPL are available in the **Minepump_SPL** directory. This folder contains a file named **model.xml** which is the feature model \cite{kang1990feature,DBLP:conf/re/SchobbensHT06} of this SPL. Feature model files are available in ".xml" format \cite{DBLP:journals/scp/ThumKBMSL14} and are created using the FeatureIDE \cite{DBLP:journals/scp/ThumKBMSL14} library.
 Model learning experiments are performed using finite state machines (FSM) \cite{gill1962introduction}.
-The FSM files and the configuration files for the products in the sample are in folder \texttt{products\_3wise}.
-The FSM files are saved in ``.dot'' format \cite{Gansner00anopen,Ellson01graphviz—} and the configuration files are in ``.config'' format \cite{DBLP:journals/scp/ThumKBMSL14}.
-### 2) The BCS SPL:
-The artifacts of the BCS SPL are stored in the *BCS_SPL* folder. The **model.xml** file is the feature model of this SPL. The FSM files for the BCS components are available in the \texttt{Complete\_FSM\_files} folder. The component FSMs are created using the I/O transition systems which are available in \cite{lity2013delta}. The FSM of each valid product, can be created by merging the FSMs of its components.
+The FSM files and the configuration files for the products in the sample are in folder **products_3wise**.
+The FSM files are saved in ".dot" format \cite{Gansner00anopen,Ellson01graphviz—} and the configuration files are in ".config" format \cite{DBLP:journals/scp/ThumKBMSL14}.
+2. The BCS SPL:
+The artifacts of the BCS SPL are stored in the **BCS_SPL** folder. The **model.xml** file is the feature model of this SPL. The FSM files for the BCS components are available in the **Complete_FSM_files** folder. The component FSMs are created using the I/O transition systems which are available in \cite{lity2013delta}. The FSM of each valid product, can be created by merging the FSMs of its components.
 
 ## The Source Code Artifacts
 
-In the paper, the model learning experiments are performed using the \texttt{ExtensibleLStarMealyBuilder} class of the LearnLib \cite{DBLP:conf/fmics/RaffeltSB05} library version 0.16.0.
-The source code artifacts of this paper are in the \texttt{ir.ac.ut.fml} package from the \texttt{src} directory. The function of classes in this package is described below:
+In the paper, the model learning experiments are performed using the **ExtensibleLStarMealyBuilder** class of the LearnLib \cite{DBLP:conf/fmics/RaffeltSB05} library version 0.16.0.
+The source code artifacts of this paper are in the **ir.ac.ut.fml** package from the **src** directory. The function of classes in this package is described below:
 
-The \texttt{MergeMultipleFSMs} class is used to produce the FSMs of the BCS SPL products. The input parameters of this class are listed below:
+The **MergeMultipleFSMs** class is used to produce the FSMs of the BCS SPL products. The input parameters of this class are listed below:
 \begin{itemize}
     \item -dir: Directory of the configuration files
     \item -dir2: Folder containing FSMs of SPL components

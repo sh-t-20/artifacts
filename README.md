@@ -32,7 +32,7 @@ The FSM files for the components of the BCS SPL are available in the **Complete_
 
 The **LearningOrderSampling** class, as input, takes a folder containing the products sampled from an SPL (i.e., the subject system SPLs). The products in this sample are learned based on different random orders using the PL* method and the non-adaptive method. For each learning order, the values of the learning cost metrics for each learning method are measured and stored in a log file.
 By running the **FixedLearningOrder** class, the products in a sample are learned based on a fixed learning order using the PL* method. This process is repeated several times and the values of the learning cost metrics are stored in a log file.
-The **Calculate order metric** class is used to calculate the values of parameter ***D*** for a number of random learning orders. After running this class, the calculated values of parameter ***D*** are stored in a log file.
+The **Calculate order metric** class is used to calculate the values of parameter *D* for a number of random learning orders. After running this class, the calculated values of parameter *D* are stored in a log file.
 
 The three classes **ConvertToExcelFile**, **ConvertToExcelFile2** and **ConvertToExcelFile3** are used in Experiments \ref{experiment_1}, \ref{experiment_2_1} and \ref{experiment_2_2}, respectively, to convert the created log file to a ``.csv'' file.
 
@@ -53,7 +53,7 @@ The number of learning orders tested is determined using the **samples_count** v
 
 The learning orders used and their corresponding metric values, which are stored in the log file, must be saved as a ".csv" file.
 Each row of this ".csv" file contains a learning order and the corresponding learning cost metric values (for the PL* method and the non-adaptive method)
-To do this, the \texttt{ConvertToExcelFile} class must be run with the following parameters:
+To do this, the **ConvertToExcelFile** class must be run with the following parameters:
 
 * -file: The input log file
 * -out: The output directory (the ".csv" file will be saved in this directory)
@@ -70,15 +70,15 @@ To replicate this experiment, a fixed learning order must first be considered. T
 The above steps must be performed for two learning orders: an order with a high learning efficiency (order 1) and an order with a relatively low learning efficiency (order 2). To determine these two learning orders, the results of Experiment \ref{experiment_1}, which are sorted by efficiency, can be used. The sorted "csv" files of Experiment \ref{experiment_1} are in the **results_1** directory.
 The results of Experiment \ref{experiment_2_1} for both subject SPLs are available in the **results_2_1** directory.
 
-#### Calculating the parameter ***D***
-In this experiment, using the **CalculateOrderMetric** class, the values of parameter ***D*** is calculated for the 200 learning orders used in Experiment \ref{experiment_1}.
+#### Calculating the parameter *D*
+In this experiment, using the **CalculateOrderMetric** class, the values of parameter *D* is calculated for the 200 learning orders used in Experiment \ref{experiment_1}.
 The parameters required to run the **CalculateOrderMetric** class are similar to the parameters explained for the **LearningOrderSampling** class.
 In order for random learning orders produced in this experiment and Experiment \ref{experiment_1} to be the same, the following conditions must be considered for the **CalculateOrderMetric** and **LearningOrderSampling** classes:
 
 * The initial value of the seed must be the same in both classes. The seed value is stored in a **long** variable of the same name.
 * item The number of random learning orders generated in both classes must be the same. The number of product learning orders is stored in a variable called **samples_count**.
 
-After running the **CalculateOrderMetric** class, the values calculated for parameter ***D*** are stored in a log file. Then, using the **ConvertToExcelFile3** class, theses values can be saved as a ".csv" file.
+After running the **CalculateOrderMetric** class, the values calculated for parameter *D* are stored in a log file. Then, using the **ConvertToExcelFile3** class, theses values can be saved as a ".csv" file.
 The results of Experiment \ref{experiment_2_2} are available as ".csv" files in the **results_2_2** folder.
 
 ### Statistical Tests

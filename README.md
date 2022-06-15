@@ -34,13 +34,13 @@ The **LearningOrderSampling** class, as input, takes a folder containing the pro
 By running the **FixedLearningOrder** class, the products in a sample are learned based on a fixed learning order using the PL* method. This process is repeated several times and the values of the learning cost metrics are stored in a log file.
 The **Calculate order metric** class is used to calculate the values of parameter *D* for a number of random learning orders. After running this class, the calculated values of parameter *D* are stored in a log file.
 
-The three classes **ConvertToExcelFile**, **ConvertToExcelFile2** and **ConvertToExcelFile3** are used in Experiments \ref{experiment_1}, \ref{experiment_2_1} and \ref{experiment_2_2}, respectively, to convert the created log file to a ``.csv'' file.
+The three classes **ConvertToExcelFile**, **ConvertToExcelFile2** and **ConvertToExcelFile3** are used in Experiments 1, 2_1 and 2_2, respectively, to convert the created log file to a ".csv" file.
 
 
 ## Replicating the Experiments
 To replicate the experiments, the repository must be downloaded. All the files needed for these experiments are in the **experiments** folder. The steps of replicating the experiments is described below:
 
-### Comparing the learning methods (RQ1-RQ3)
+### Experiment 1: Comparing the learning methods (RQ1-RQ3)
 To replicate this experiment, the **LearningOrderSampling** class must be run using the following parameters:
 
 * -dir: Directory of the SPL products (sampled products)
@@ -60,31 +60,31 @@ To do this, the **ConvertToExcelFile** class must be run with the following para
 
 The ".csv" files of this experiment are in the **results_1** folder.
 
-### The effect of learning order (RQ4)
+### Experiment 2: The effect of learning order (RQ4)
 
 To evaluate the effect of product learning order on the efficiency of the PL* method, two experiments are performed.
-Experiment \ref{experiment_2_1} shows that the order of learning products can affect the total cost of learning in the PL* method. In Experiment \ref{experiment_2_2}, the value of parameter $D$ is calculated for the 200 learning orders used in Experiment \ref{experiment_1}. At the end of this experiment, the Pearson correlation coefficient between $D$ and the learning cost metrics can be calculated (using the Python codes explained in \ref{section:statistical_tests}).
+Experiment 2_1 shows that the order of learning products can affect the total cost of learning in the PL* method. In Experiment 2_2, the value of parameter $D$ is calculated for the 200 learning orders used in Experiment 1. At the end of this experiment, the Pearson correlation coefficient between $D$ and the learning cost metrics can be calculated (using the Python codes explained in the "Statistical Tests" Section).
 
-#### The effect of learning order on the efficiency of the PL* method
+#### Experiment 2_1: The effect of learning order on the efficiency of the PL* method
 To replicate this experiment, a fixed learning order must first be considered. This learning order is stored in a variable of type int array (called **learning_order_array**) in the **FixedLearningOrder** class. The parameters required to run this class are similar to the parameters described for the **LearningOrderSampling** class. After running the **FixedLearningOrder** class, the measured values for the learning cost metrics are stored in a log file. Using the **ConverToExcelFile2** class, these values can be stored as a ".csv" file.
-The above steps must be performed for two learning orders: an order with a high learning efficiency (order 1) and an order with a relatively low learning efficiency (order 2). To determine these two learning orders, the results of Experiment \ref{experiment_1}, which are sorted by efficiency, can be used. The sorted "csv" files of Experiment \ref{experiment_1} are in the **results_1** directory.
-The results of Experiment \ref{experiment_2_1} for both subject SPLs are available in the **results_2_1** directory.
+The above steps must be performed for two learning orders: an order with a high learning efficiency (order 1) and an order with a relatively low learning efficiency (order 2). To determine these two learning orders, the results of Experiment 1, which are sorted by efficiency, can be used. The sorted "csv" files of Experiment 1 are in the **results_1** directory.
+The results of Experiment 2_1 for both subject SPLs are available in the **results_2_1** directory.
 
-#### Calculating the parameter *D*
-In this experiment, using the **CalculateOrderMetric** class, the values of parameter *D* is calculated for the 200 learning orders used in Experiment \ref{experiment_1}.
+#### Experiment 2_2: Calculating the parameter *D*
+In this experiment, using the **CalculateOrderMetric** class, the values of parameter *D* is calculated for the 200 learning orders used in Experiment 1.
 The parameters required to run the **CalculateOrderMetric** class are similar to the parameters explained for the **LearningOrderSampling** class.
-In order for random learning orders produced in this experiment and Experiment \ref{experiment_1} to be the same, the following conditions must be considered for the **CalculateOrderMetric** and **LearningOrderSampling** classes:
+In order for random learning orders produced in this experiment and Experiment 1 to be the same, the following conditions must be considered for the **CalculateOrderMetric** and **LearningOrderSampling** classes:
 
 * The initial value of the seed must be the same in both classes. The seed value is stored in a **long** variable of the same name.
 * item The number of random learning orders generated in both classes must be the same. The number of product learning orders is stored in a variable called **samples_count**.
 
 After running the **CalculateOrderMetric** class, the values calculated for parameter *D* are stored in a log file. Then, using the **ConvertToExcelFile3** class, theses values can be saved as a ".csv" file.
-The results of Experiment \ref{experiment_2_2} are available as ".csv" files in the **results_2_2** folder.
+The results of Experiment 2_2 are available as ".csv" files in the **results_2_2** folder.
 
 ### Statistical Tests
 
 The source codes for performing statistical tests and plotting diagrams are in the **SPL_Learning.ipynb** file (which is located in the **statistical_tests** folder). These codes are written in Python using the Jupyter Notebook.
-To perform statistical tests, the ".csv" files generated in the experiments described in Section \ref{experiments} are first loaded using into DataFrames using the **read_csv** method of the Pandas [13] library.
+To perform statistical tests, the ".csv" files generated in the experiments described in the "Replicating the Experiments" Section are first loaded using into DataFrames using the **read_csv** method of the Pandas [13] library.
 Statistil tests are performed using the Scipy [7] library.
 The Matplotlib [6] library is used to draw the diagrams.
 

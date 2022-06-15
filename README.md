@@ -100,4 +100,17 @@ https://github.com/damascenodiego/learningFFSM [2]
 
 ### References:
  [1] Carlos Diego Nascimento damasceno, Mohammad Reza Mousavi, and Adenilso da Silva Simao. 2019. Learning to Reuse: Adaptive Model Learning for Evolving Systems. In *Integrated Formal Methods - 15th International Conference, IFM2019, Bergen, Norway December 2-6, 2019, pProceedings (Lecture Notes in Computer Science, Vol. 11918)*, Wolfgang Ahrendt and Silvia Lizeth Tapia Tarifa (Eds.). Springer, 138-156.
- [2] Carlos
+
+[2] Carlos Diego Nascimento Damasceno, Mohammad Reza Mousavi, and Adenilso da Silva Simao. 2021. Learning by sampling: learning behavioral family models from software product lines. *Empirical Software Engineering* 26, 1 (2021), 4.
+
+[3] John Ellson, Emden Gansner, Lefteris Koutsofios, Stephen North, Gordon Woodhull, Short Description, and Lucent Technologies. 2001. Graphviz - open source graph drawing tools. In *Lecture Notes in Computer Science*. Springer-Verlag, 483-484.
+
+[4] Emden R. Gansner and Stephen C. North. 2000. An open graph visualization system and its applications to software engineering. *SOFTWARE - PRACTICE AND EXPERIENCE* 30, 11 (2000), 1203-1233.
+
+[5] Arthur Gill et al. 1962. Introduction to the theory of finite-state-machines. (1962).
+
+[6] J. D. Hunter. 2007. Matplotlib: A 2D graphics environment. *Computing in Science & Engineering* 9, 3 (2007), 90-95.
+
+[7] Eric Jones, Travis Oliphant, Pearu Peterson, et al. 2001-. Scipy: Open source scientific tools for Python. http://www.scipy.org/
+
+[8] Kyo C Kang, Sholom G Cohen, James A Hess, William E Novak, and A Spencer Peterson. 1990. *Featureoriented domain analysis (FODA) feasibility study*. Technical Report. Carnegie-Mellon Univ Pittsburgh Pa Software Engineering Inst.

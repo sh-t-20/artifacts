@@ -4,7 +4,7 @@
 In this submission, the artifacts of the paper "Adaptive Behavioral Model Learning for Software Product Lines" (Submission number 16) are described. The artifacts include models of the subject systems, source code of the experiments, and statistical tests used. In this paper, the structure of the benchmarks is described; the functionality of the different parts of the source code is explained; and the steps of the performed experiments are elaborated. We also specify how the statistical tests are performed.
 
 ## Subject Systems
-The two subject systems used in the experiments are the Minepump SPL and the BCS SPL. For each of these SPLs, there is a folder of the same name in the ``experiments``(https://github.com/sh-t-20/artifacts/tree/main/SPL_Learning/experiments) folder. The contents of these folders are described below:
+The two subject systems used in the experiments are the Minepump SPL and the BCS SPL. For each of these SPLs, there is a folder of the same name in the [``experiments``](https://github.com/sh-t-20/artifacts/tree/main/SPL_Learning/experiments) folder. The contents of these folders are described below:
 
 1. The Minepump SPL:
 The artifacts of the Minepump SPL are available in the ``Minepump_SPL`` directory. This folder contains a file named ``model.xml`` which is the feature model [8,11] of this SPL. Feature model files are available in ".xml" format [12] and are created using the FeatureIDE [12] library.
